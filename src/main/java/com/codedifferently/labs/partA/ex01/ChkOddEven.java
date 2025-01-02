@@ -16,6 +16,17 @@ public class ChkOddEven {
         int num = 0;
         System.out.println("Enter a number:");
         num = in.nextInt();
+        if (num < 1 || num >10){
+            System.out.println("The number is out of range");
+        }else {
+            if (num % 2 == 0){
+                System.out.println("The number " +  num  + " is even");
+            }
+            else{
+                System.out.println("The number "+ num + " is odd");
+
+            }
+        }
 
     }
 }
